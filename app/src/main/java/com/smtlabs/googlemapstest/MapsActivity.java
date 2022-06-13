@@ -115,7 +115,7 @@ public class MapsActivity extends AppCompatActivity implements RoutingListener {
                         e.printStackTrace();
                     }
                 }
-                } else {
+            } else {
                 currentLocation = new LatLng(22.73250448383884, 75.85013067265271);
                 Toast.makeText(this, "Gps Disabled. Enable to Get Live Location", Toast.LENGTH_SHORT).show();
             }
@@ -216,7 +216,7 @@ public class MapsActivity extends AppCompatActivity implements RoutingListener {
                 .withListener(this)
                 .alternativeRoutes(true)
                 .waypoints(home, latLng)
-                .key("AIzaSyAvdczbD0IgAfV8LzgX85M_c1Is0yXSIL8")  //also define your api key here.
+                .key("${MAPS_API_KEY}")  //also define your api key here.
                 .build();
         routing.execute();
     }
