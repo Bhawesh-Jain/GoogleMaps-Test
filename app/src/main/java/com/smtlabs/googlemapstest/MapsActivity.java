@@ -216,7 +216,7 @@ public class MapsActivity extends AppCompatActivity implements RoutingListener {
                 .withListener(this)
                 .alternativeRoutes(true)
                 .waypoints(home, latLng)
-                .key("AIzaSyAvdczbD0IgAfV8LzgX85M_c1Is0yXSIL8")  //also define your api key here.
+                .key("Your Api Key")  //also define your api key here.
                 .build();
         routing.execute();
     }
